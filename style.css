@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+    
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgb(29, 24, 36),rgb(39, 49, 47));
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 100px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    font-size: 1.5em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+header .navigation {
+    position: relative;
+    display: flex;
+}
+
+header .navigation li { 
+    list-style: none;
+}
+.lineup {
+    list-style: none;
+    padding: 30px 0px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+
+.lineup li {
+    padding: 4px 0;
+    color: #fff;
+    text-transform: uppercase;
+   
+}
+
+header .navigation li a {
+    display: inline-block;
+    color: #fff;
+    margin-right: 40px;
+    text-decoration: none;
+}
+
+header .navigation li a:hover {
+    color: #771a1a;
+}
+
+.content {
+    max-width: 600px;
+} 
+
+.content .contentBx h2 {
+    font-size: 2em;
+    color: #fff;
+    line-height: 1em;
+}
+
+.content .contentBx p {
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+.content .contentBx a  {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #771a1a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    opacity: 1;
+    
+}
+
+.content .contentBx a:hover {
+    letter-spacing: 2px;
+    background: #552323;
+    opacity: 0.8;
+    
+}
+
+.sci {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sci li a {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    filter: invert(1);
+    transform: scale(0.5);
+}
+
+@media (max-width: 991px) {
+    header {
+       
+        padding: 15px 40px;
+        
+    } 
+    section {
+        padding: 40px;
+        background: linear-gradient(rgb(29, 24, 36),rgb(39, 49, 47));
+        background-size: cover;
+        background-position: center;
+    }
+    .contetnt .contentBx h2 {
+        font-size: 2.5em;
+    }
+    .contetnt .contentBx p {
+        font-size: 1em;
+    }
+    header .navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        z-index: 10;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header .navigation {
+        font-size: 24px;
+        margin: 10px 0;
+}
+    .toggleMenu {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 11;
+    }
+
+
+ 
